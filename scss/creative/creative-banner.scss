@@ -1,0 +1,32 @@
+.creative-banner {
+    background-image: url("../../images/creative-banner.avif");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 260px;
+    margin: 50px 0;
+
+    .banner-info {
+        color: #fff;
+        text-align: center;
+        position: relative;
+        top: 30%;
+
+        .banner-title {
+            font-size: 18px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        .banner-subtitle {
+            font-size: 14px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .site-btn {
+            @include site-button;
+            font-weight: 500;
+        }
+    }
+}
