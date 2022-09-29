@@ -1,0 +1,43 @@
+.home-hero {
+    background-image: url("../images/home-hero.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+
+    .home-hero-info {
+        max-width: 495px;
+        position: absolute;
+        top: 250px;
+        left: 200px;
+
+        h3 {
+            font-weight: 500;
+        }
+        h1 {
+            font-size: 34px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+        .info-links {
+            margin-top: 30px;
+
+            .site-btn {
+                @include site-button();
+            }
+
+            .gen-link {
+                margin-left: 15px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+                font-weight: 500;
+            }
+        }
+    }
+}

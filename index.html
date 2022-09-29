@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 4</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="modal">
+        <div class="form">
+            <h2>Log In</h2>
+            <p class="formAlert"></p>
+            <input type="text" id="userName" placeholder="Username" required="true" />
+            <input type="text" id="password" placeholder="Password" required="true" />
+            <div>
+                <button type="submit" id="submit">Submit</button>
+                <button type="cancel" id="cancel">Cancel</button>
+            </div>
+        </div>
+        <div class="confirm">
+            <h2>You are now logged in!</h2>
+            <button id="done">Okay</button>
+        </div>
+    </div>
+     
+    <nav>
+        <div class="left-links">
+            <a class="logo" href="#home"><img src="./images/logo.svg" alt="logo">Adobe</a>
+            <a href="#creative">Creativity & Design</a>
+            <a href="#">PDF & E-signatures</a>
+            <a href="#">Marketing & Commerce</a>
+            <a href="#">Help & Support</a>
+        </div>
+        <div class="right-links">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a id="sign-in" href="#">Sign In</a>
+        </div>
+    </nav>
+
+    <div id="app"></div>
+
+    <footer>
+        <div class="footer-copylinks">
+            <p>Copyright &copy; 2022 Adobe. All rights reserved.</p><span>/</span>
+            <a href="#">Privacy</a><span>/</span>
+            <a href="#">Terms of Use</a><span>/</span>
+            <a href="#">Cookie Preferences</a><span>/</span>
+            <a href="#">Do not sell my personal information</a>
+        </div>
+    </footer>
+
+    <script src="lib/jquery-3.6.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="app/model.js"></script>
+    <script type="module" src="app/app.js"></script>
+</body>
+</html>
